@@ -48,16 +48,16 @@ export default function Home() {
     () => ({
       "@context": "https://schema.org",
       "@type": "Blog",
-      headline: "Genius Labs Blog - Educational Resources for Young Innovators",
+      headline: "Your Blog - Educational Resources for Young Innovators",
       description:
-        "Discover educational resources, workshops, and learning opportunities for children. Genius Labs helps young minds explore STEM, arts, and creative thinking.",
-      url: "https://blog.geniuslabs.edu",
+        "Discover educational resources, workshops, and learning opportunities for children. YourCompany helps young minds explore STEM, arts, and creative thinking.",
+      url: "https://blog.example.com",
       publisher: {
         "@type": "Organization",
-        name: "GeniusLabs",
+        name: "YourCompany",
         logo: {
           "@type": "ImageObject",
-          url: "https://blog.geniuslabs.edu/logo.png",
+          url: "https://blog.example.com/logo.png",
           width: 600,
           height: 60,
         },
@@ -66,7 +66,7 @@ export default function Home() {
       copyrightYear: new Date().getFullYear(),
       copyrightHolder: {
         "@type": "Organization",
-        name: "GeniusLabs",
+        name: "YourCompany",
       },
       blogPost: filteredPosts.map((post) => ({
         "@type": "BlogPosting",
@@ -78,9 +78,9 @@ export default function Home() {
           "@type": "Person",
           name: post.author,
         },
-        url: `https://blog.geniuslabs.edu/blog/${post.slug}`,
+        url: `https://blog.example.com/blog/${post.slug}`,
         image: post.coverImage,
-        keywords: `${post.category}, genius labs, education, learning`,
+        keywords: `${post.category}, your company, education, learning`,
         articleSection: post.category,
       })),
     }),
@@ -97,13 +97,13 @@ export default function Home() {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://geniuslabs.live/",
+          item: "https://example.com/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Blog",
-          item: "https://blog.geniuslabs.edu",
+          item: "https://blog.example.com",
         },
         ...(categoryParam
           ? [
@@ -111,7 +111,7 @@ export default function Home() {
                 "@type": "ListItem",
                 position: 3,
                 name: categoryTitle,
-                item: `https://blog.geniuslabs.edu/?category=${categoryParam}`,
+                item: `https://blog.example.com/?category=${categoryParam}`,
               },
             ]
           : []),
@@ -163,11 +163,11 @@ export default function Home() {
           {/* Rich content for SEO */}
           <section className="my-16 py-12 bg-gray-50 rounded-lg">
             <div className="max-w-3xl mx-auto px-4">
-              <h2 className="text-xl font-bold mb-6">About Genius Labs Educational Blog</h2>
+              <h2 className="text-xl font-bold mb-6">About YourCompany Educational Blog</h2>
               <p className="mb-4 text-sm">
-                The Genius Labs Blog is dedicated to providing valuable educational resources, insights, and inspiration
-                for parents, educators, and young learners. Our mission is to foster a love of learning and help
-                children develop the skills they need to thrive in an ever-changing world.
+                The Your Blog is dedicated to providing valuable educational resources, insights, and inspiration for
+                parents, educators, and young learners. Our mission is to foster a love of learning and help children
+                develop the skills they need to thrive in an ever-changing world.
               </p>
               <p className="mb-4 text-sm">
                 Through our blog, we share expert advice, innovative teaching methods, and creative learning activities
@@ -176,8 +176,8 @@ export default function Home() {
               </p>
               <p className="text-sm">
                 Whether you&rsquo;re looking for hands-on science experiments to try at home, tips for nurturing
-                creativity, or guidance on supporting your child&rsquo;s educational journey, the Genius Labs Blog is
-                your trusted resource for quality educational content.
+                creativity, or guidance on supporting your child&rsquo;s educational journey, the Your Blog is your
+                trusted resource for quality educational content.
               </p>
             </div>
           </section>

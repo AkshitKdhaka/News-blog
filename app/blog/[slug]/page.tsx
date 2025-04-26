@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (!post) {
     return {
-      title: "Post Not Found - Genius Labs Blog",
+      title: "Post Not Found - Your Blog",
       description: "The requested blog post could not be found.",
     }
   }
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: post.title,
     description: cleanExcerpt.substring(0, 160),
-    keywords: `${post.category}, genius labs, education, learning`,
+    keywords: `${post.category}, your company, education, learning`,
     openGraph: {
       title: post.title,
       description: cleanExcerpt.substring(0, 160),
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       images: [post.coverImage],
     },
     alternates: {
-      canonical: `https://blog.geniuslabs.edu/blog/${post.slug}`,
+      canonical: `https://blog.example.com/blog/${post.slug}`,
     },
   }
 }
@@ -195,23 +195,23 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     author: {
       "@type": "Person",
       name: post.author,
-      url: `https://blog.geniuslabs.edu/author/${post.author.toLowerCase().replace(/\s+/g, "-")}`,
+      url: `https://blog.example.com/author/${post.author.toLowerCase().replace(/\s+/g, "-")}`,
     },
     publisher: {
       "@type": "Organization",
-      name: "Genius Labs",
+      name: "Your Company",
       logo: {
         "@type": "ImageObject",
-        url: "https://blog.geniuslabs.edu/logo.png",
+        url: "https://blog.example.com/logo.png",
         width: 600,
         height: 60,
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://blog.geniuslabs.edu/blog/${post.slug}`,
+      "@id": `https://blog.example.com/blog/${post.slug}`,
     },
-    keywords: `${post.category}, genius labs, education, learning`,
+    keywords: `${post.category}, your company, education, learning`,
     articleSection: post.category,
     wordCount:
       post.content?.introduction?.split(" ").length ||
@@ -336,7 +336,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   <h4 className="text-xs font-semibold text-gray-500 mb-2">Follow us</h4>
                   <div className="flex gap-2">
                     <a
-                      href="https://www.youtube.com/@GeniusLabsWorkshops"
+                      href="https://www.youtube.com/@YourChannel"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Follow on YouTube"
@@ -358,7 +358,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                       </svg>
                     </a>
                     <a
-                      href="https://business.facebook.com/latest/home?business_id=1276543033268313&asset_id=119011211298580"
+                      href="https://www.facebook.com/your-company"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Follow on Facebook"
@@ -379,7 +379,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                       </svg>
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/genius-labs-4736ab286/"
+                      href="https://www.linkedin.com/company/your-company"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Follow on LinkedIn"
@@ -402,7 +402,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                       </svg>
                     </a>
                     <a
-                      href="https://www.instagram.com/genius_labs.live/"
+                      href="https://www.instagram.com/your_company/"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Follow on Instagram"

@@ -28,7 +28,7 @@ export function Hero() {
     },
     {
       id: 3,
-      background: "bg-[url('https://picsum.photos/1200/600?random=3')]",
+      background: "bg-[url('https://picsum.photos/1200/600?random=1')]",
       alt: "Projects created by genius kids showcasing innovation and creativity",
       title: "Genius Kids Projects",
     },

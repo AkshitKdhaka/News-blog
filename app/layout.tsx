@@ -13,21 +13,21 @@ const nunito = Nunito({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Genius Labs Blog",
-    default: "Genius Labs Blog - Educational Resources for Young Innovators",
+    template: "%s | Your Blog",
+    default: "Your Blog - Educational Resources for Young Innovators",
   },
   description:
-    "Discover educational resources, workshops, and learning opportunities for children. Genius Labs helps young minds explore STEM, arts, and creative thinking.",
+    "Discover educational resources, workshops, and learning opportunities for children. Your Company helps young minds explore STEM, arts, and creative thinking.",
   keywords:
-    "genius labs, educational resources, STEM for kids, children's workshops, educational camps, learning projects, creative thinking",
-  authors: [{ name: "Genius Labs", url: "https://geniuslabs.live/" }],
-  creator: "Genius Labs",
-  publisher: "Genius Labs",
+    "your company, educational resources, STEM for kids, children's workshops, educational camps, learning projects, creative thinking",
+  authors: [{ name: "Your Company", url: "https://example.com/" }],
+  creator: "Your Company",
+  publisher: "Your Company",
   formatDetection: {
     email: false,
     telephone: false,
   },
-  metadataBase: new URL("https://blog.geniuslabs.edu"),
+  metadataBase: new URL("https://blog.example.com"),
   alternates: {
     canonical: "/",
     languages: {
@@ -36,17 +36,17 @@ export const metadata: Metadata = {
   },
   category: "Education",
   openGraph: {
-    title: "Genius Labs Blog - Educational Resources for Young Innovators",
+    title: "Your Blog - Educational Resources for Young Innovators",
     description:
-      "Discover educational resources, workshops, and learning opportunities for children. Genius Labs helps young minds explore STEM, arts, and creative thinking.",
-    url: "https://blog.geniuslabs.edu",
-    siteName: "Genius Labs Blog",
+      "Discover educational resources, workshops, and learning opportunities for children. Your Company helps young minds explore STEM, arts, and creative thinking.",
+    url: "https://blog.example.com",
+    siteName: "Your Blog",
     images: [
       {
         url: "https://picsum.photos/1200/630?random=og",
         width: 1200,
         height: 630,
-        alt: "Genius Labs Blog - Educational Resources for Young Innovators",
+        alt: "Your Blog - Educational Resources for Young Innovators",
       },
     ],
     locale: "en_US",
@@ -54,11 +54,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Genius Labs Blog - Educational Resources for Young Innovators",
+    title: "Your Blog - Educational Resources for Young Innovators",
     description: "Discover educational resources, workshops, and learning opportunities for children",
     images: ["https://picsum.photos/1200/630?random=twitter"],
-    creator: "@GeniusLabs",
-    site: "@GeniusLabs",
+    creator: "@YourCompany",
+    site: "@YourCompany",
   },
   robots: {
     index: true,
@@ -90,30 +90,27 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Genius Labs",
-              url: "https://geniuslabs.live/",
-              logo: "https://blog.geniuslabs.edu/logo.png",
-              sameAs: [
-                "https://www.facebook.com/people/Genius-Labs/61551390680852/",
-                "https://www.instagram.com/genius_labs.live/",
-              ],
+              name: "Your Company",
+              url: "https://example.com/",
+              logo: "https://blog.example.com/logo.png",
+              sameAs: ["https://www.facebook.com/your-company", "https://www.instagram.com/your_company/"],
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+91 9468074074",
+                telephone: "+1 555-123-4567",
                 contactType: "customer service",
-                email: "info@geniuslabs.live",
+                email: "info@example.com",
                 availableLanguage: "English",
               },
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "SkymarkOne, Ground Floor",
-                addressLocality: "Sector 98, Noida",
-                addressRegion: "Uttar Pradesh",
-                postalCode: "201303",
-                addressCountry: "IN",
+                streetAddress: "123 Main Street",
+                addressLocality: "Anytown",
+                addressRegion: "State",
+                postalCode: "12345",
+                addressCountry: "US",
               },
               description:
-                "Genius Labs provides innovative educational programs and resources for children to explore STEM, arts, and creative thinking in a fun and engaging environment.",
+                "Your Company provides innovative educational programs and resources for children to explore STEM, arts, and creative thinking in a fun and engaging environment.",
             }),
           }}
         />
