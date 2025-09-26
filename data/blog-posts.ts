@@ -35,6 +35,52 @@ export interface BlogPostSection {
 export const blogPosts: BlogPost[] = [
   // Workshops Category (3 posts)
   {
+    title: "Dosas and decades of deliciousness: The Shri Ganesh Bhavan story",
+    excerpt:
+      "With a strong belief in consistency and tradition, Shri Ganesh Bhavan has grown from a humble hotel in Chennai to 10 outlets across the city",
+    slug: "shri-ganesh-bhavan-story",
+    coverImage: "https://picsum.photos/800/400?random=1",
+    author: "Shivya Saha",
+    date: "March 11, 2023",
+    readTime: "4 min",
+    category: "workshops",
+    backgroundColor: "bg-amber-100",
+    authorBio:
+      "Shivya Saha is a food journalist with over 10 years of experience covering South Indian cuisine. She has written for major food publications and is the author of 'South Indian Flavors: A Culinary Journey'.",
+    content: {
+      introduction:
+        "Nestled in the heart of Chennai, Shri Ganesh Bhavan has been serving authentic South Indian cuisine for over three decades. What started as a small, family-run establishment has now evolved into a beloved culinary institution with 10 outlets across the city. This is the story of tradition, consistency, and the unwavering commitment to quality that has made Shri Ganesh Bhavan a household name in Chennai.",
+      sections: [
+        {
+          title: "Humble Beginnings",
+          content:
+            "In 1989, Mr. Venkatesh Iyer, a passionate food enthusiast with a background in hotel management, opened the first Shri Ganesh Bhavan in T. Nagar, Chennai. With just eight tables and a small kitchen, the restaurant specialized in serving traditional South Indian breakfast items like dosas, idlis, and vadas. Despite its modest size, the restaurant quickly gained popularity for its perfectly crisp dosas and flavorful chutneys, prepared using recipes passed down through generations.",
+          image: {
+            src: "https://picsum.photos/800/400?random=1-1",
+            alt: "The original Shri Ganesh Bhavan restaurant in T. Nagar, Chennai",
+            caption: "The original Shri Ganesh Bhavan restaurant in T. Nagar, Chennai (1989)",
+          },
+        },
+        {
+          title: "The Secret to Success",
+          content:
+            "What sets Shri Ganesh Bhavan apart from other South Indian restaurants is their unwavering commitment to quality and authenticity. The restaurant sources ingredients directly from local farmers, ensuring freshness and supporting the local economy. The dosa batter is still prepared using the traditional method of soaking rice and lentils overnight and grinding them to perfection. Nothing is pre-made or stored for long periods, maintaining the restaurant's high standards for every dish served. This dedication to quality has earned Shri Ganesh Bhavan a loyal customer base that spans generations.",
+        },
+        {
+          title: "Growth and Expansion",
+          content:
+            "By the early 2000s, Shri Ganesh Bhavan had established itself as one of Chennai's most beloved South Indian restaurants. Encouraged by this success, Mr. Iyer opened the second outlet in Anna Nagar in 2003, followed by a third in Adyar in 2005. Today, Shri Ganesh Bhavan has 10 outlets across Chennai, each maintaining the same standards of quality and service that made the original restaurant so successful. Despite the expansion, each outlet continues to operate with the same family-run ethos, with Mr. Iyer's sons and daughters now actively involved in managing the business.",
+        },
+      ],
+      quote: {
+        text: "Our focus has always been on quality and consistency. We believe that's what keeps customers coming back year after year. We may have grown in size, but our commitment to serving authentic, homestyle South Indian food remains unchanged.",
+        author: "Venkatesh Iyer, Founder, Shri Ganesh Bhavan",
+      },
+      conclusion:
+        "As Shri Ganesh Bhavan celebrates over three decades of serving delicious South Indian cuisine, the restaurant continues to honor its legacy while embracing the future. With plans to open outlets in other major Indian cities, the restaurant is poised for further growth without compromising on the quality and authenticity that has been its hallmark. For now, the aroma of freshly made dosas and the sound of satisfied customers continue to fill the air at Shri Ganesh Bhavan, a testament to the enduring appeal of tradition in an ever-changing culinary landscape.",
+    },
+  },
+  {
     title: "Culinary Workshop: Mastering the Art of South Indian Cuisine",
     excerpt:
       "Join Chef Ravi Kumar for a hands-on workshop exploring the authentic flavors and techniques of traditional South Indian cooking",
